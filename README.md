@@ -17,8 +17,14 @@ No meu site, o usuário terá a opção de se cadastrar ou não. Caso ele se cad
 #LINGUAGENS FRONT:
 JavaScript, HTML e CSS.
 
+
+
 #LINGUAGEM BACK-END:
 PHP.
 
 #BANCO DE DADOS para salvar o cadastro dos clientes:
 1.PGAdmin.
+
+
+![image](https://github.com/user-attachments/assets/a4c49e14-bbc1-4be5-8106-f49bf7df3fbd)
+
