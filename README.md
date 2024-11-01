@@ -1,5 +1,7 @@
 # ProvaWEB6-
 Henrique Lenis 802.254
+
+#IDEIA: 
 A minha ideia é criar uma loja de vendas de roupas, tendo como iniciativa, divulgar a loja do meu pai e os demais clientes do mundo da internet. A principio seria isso, todavia posso também divulgar para o clientes que desejam comprar roupas de alta qualidade, roupas para praticar esportes e afins. 
 Estarei utilizando as linguagens para desenvolver a loja como: JavaScript, PHP, HTML e CSS.
 
@@ -12,8 +14,11 @@ No meu site, o usuário terá a opção de se cadastrar ou não. Caso ele se cad
 2.cadastro de itens da loja para venda;
 3.adicionar itens ao carrinho com interatividade JS;
 
-#LINGUAGENS:
-JavaScript, PHP, HTML e CSS
+#LINGUAGENS FRONT:
+JavaScript, HTML e CSS.
+
+#LINGUAGEM BACK-END:
+PHP.
 
 #BANCO DE DADOS para salvar o cadastro dos clientes:
 1.PGAdmin.
