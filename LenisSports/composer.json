@@ -1,0 +1,17 @@
+{
+    "name": "lenis/lenis-sports",
+    "require": {
+        "phpunit/phpunit": "11.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lenis\\LenisSports\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LenisHenrique",
+            "email": "150487226+LenisHenrique@users.noreply.github.com"
+        }
+    ]
+}
