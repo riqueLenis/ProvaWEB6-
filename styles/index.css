@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-acima{
+    font-family: sans-serif;
+    background-color: black;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 10px 50px;
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+.footer-acima, .footer-esquerdo, 
+.footer-acima, .footer-centro,
+.footer-acima, .footer-direito{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-acima, .footer-esquerdo{
+    width: 40%;
+}
+
+.footer-acima h3{
+    color: antiquewhite;
+    font: normal 36px, cursive;
+    margin: 0;
+}
+
+.footer-acima h3 span{
+    color: cadetblue;
+}
+
+.footer-acima .footer-links{
+    color: antiquewhite;
+    margin: 20px 0 12px;
+    padding: 0;
+}
