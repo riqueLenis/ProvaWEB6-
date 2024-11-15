@@ -15,20 +15,19 @@ class CadastroRepository {
         $stmt->execute();
     }
 
-    public function buscaPeloId($id) {
-        $sql = "SELECT * FROM cadastro WHERE id = :id";
-        $stmt = $this->pdo->prepare($sql);
-        $stmt->bindValue(':id', $id);
-        $stmt->execute();
-        return $stmt->fetch(PDO::FETCH_ASSOC);
-    }
-
     // localhost:8000/cadastro/1
 
     public function buscaTodos() {
         $sql = "SELECT * FROM cadastro";
         $stmt = $this->pdo->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function buscaPeloId($id) {
+        $stmt = $this->pdo->prepare('SELECT * FROM cadastro WHERE id = :id');
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
     public function atualiza(Cadastro $cadastro) {

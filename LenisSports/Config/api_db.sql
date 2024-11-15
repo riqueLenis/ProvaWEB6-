@@ -1,4 +1,4 @@
-CREATE DATABASE api_db;
+CREATE DATABASE IF NOT EXISTS api_db;
 
 USE api_db;
 
@@ -7,4 +7,15 @@ CREATE TABLE IF NOT EXISTS cadastro (
     nome VARCHAR(255) NOT NULL,
     telefone VARCHAR(255),
     email VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS categoria (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS pedido (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    descricao VARCHAR(255) NOT NULL,
+    quantidade INT NOT NULL
 );

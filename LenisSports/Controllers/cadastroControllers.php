@@ -10,9 +10,9 @@ class CadastroController {
         $cadastros = [
             [
                 'id' => 1,
-                'nome' => 'luiz',
+                'nome' => 'henrique',
                 'telefone' => '123',
-                'email' => 'luiz@gmail.com'
+                'email' => 'henrique@gmail.com'
             ]
             ];
 
@@ -47,6 +47,18 @@ class CadastroController {
 
     public function removeCadastro($id) {
         $this->repository->remove($id);
+    }
+
+    public function buscarCadastroPorId($id) {
+        $cadastro = $this->repository->buscaPeloId($id);
+
+        if ($cadastro) {
+            header('Content-Type: application/json');
+            echo json_encode($cadastro); 
+        } else {
+            header('HTTP/1.1 404 Not Found');
+            echo json_encode(['message' => 'Cadastro não encontrado']);
+        }
     }
 }
 ?>
