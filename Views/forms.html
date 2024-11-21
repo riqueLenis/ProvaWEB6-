@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="/styles/formsStyle.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body> 
     <header>
@@ -12,9 +13,9 @@
         <h2>Ou siga em frente</h2>
     </header>
     <section>
-        <form action="/cadastro" method="POST"> 
+        <form action="processaCadastro.php" method="POST" id="formCadastro">
             <label for="nome">Nome</label>
-            <input type="text" name="Nome" id="idnome" placeholder="Henrique Lenis" required>
+            <input type="text" name="nome" id="idnome" placeholder="Henrique Lenis" required>
             <br><br>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="idemail" placeholder="henriquelenis12@gmail.com" required>
@@ -22,7 +23,7 @@
             <input type="submit" value="Enviar">
         </form>
         <br>
-        <a href="/FrontEnd-Loja/index.html">Ir para o site principal</a>
+        <a href="/FrontEnd-Loja/LenisSports/index.html">Ir para o site principal</a>
     </section>
 </body>
 </html>
